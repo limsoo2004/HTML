@@ -7,6 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>컴퓨터공학부 - 임수현</title>
     <link rel="stylesheet" type="text/css" href="layout.css">
+    <style>
+        article
+        {
+            /* background-color: aqua; */
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            margin: 20px 0px 20px 0px;
+        }
+        #com1
+        { 
+            border: 2px solid hotpink;
+            border-radius: 10px;
+        }
+        #com
+        {
+            border: 5px dotted green;
+            border-radius: 20px;
+        }
+        #meta
+        {
+            border: 10px double hotpink;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,10 +43,10 @@
         <!-- 메뉴 -->
         <nav>
             <ul>
-                <li><a href="">학과소개</a></li>
-                <li><a href="">컴퓨터공학 전공</a></li>
-                <li><a href="">메타버스 전공</a></li>
-                <li><a href="">교육 목표</a></li>
+                <li><a href="#com1">학부 소개</a></li>
+                <li><a href="#com">컴퓨터공학 전공</a></li>
+                <li><a href="#meta">메타버스 전공</a></li>
+                <li><a href="#edu">교육 목표</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +54,7 @@
     <!-- 학부 소개 메인 영역 -->
     <section>
         <!-- 콘텐츠 내용 영역 -->
-        <article>
+        <article id="com1">
             <h2>학부 소개</h2>
             <p>
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여
@@ -40,7 +67,7 @@
             </p>
         </article>
         <!-- 컴퓨터공학 전공 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id="com">
             <h2>컴퓨터공학 전공</h2>
             <h3>소개</h3>
             <p>
@@ -57,7 +84,7 @@
             </dl>
         </article>
         <!-- 메타버스전공 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id="meta">
             <h2>메타버스 전공</h2>
             <h3>소개</h3>
             <p>
@@ -74,7 +101,7 @@
             </dl>
         </article>
         <!-- 교육 목표 컨텐츠 내용 영역 -->
-        <article>
+        <article id="edu">
             <h2>교육 목표</h2>
 
             <p>
