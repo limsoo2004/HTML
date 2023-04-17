@@ -1,0 +1,147 @@
+body 
+{
+    font-family:"맑은 고딕";
+}
+header
+{
+    background-color: bisque;
+    
+    width: 80%;
+    /* margin 태그는 */
+    /* 오른쪽 가운데 정렬 */
+    margin-right:auto;
+    /* 왼쪽 가운데 정렬 */
+    margin-left: auto;
+    /* padding 방향은  */
+    padding: 10px;
+
+    /* padding: 10px 20px 50px 100px; */
+    /*12시부터 시계방향*/
+    overflow: hidden;
+}
+
+h1
+{
+    /* background-color: rgb(28, 0, 128); */
+    font-size: 2em;
+}
+/* header의 자손인 h1 태그에 적용 */
+header h1 
+{
+    width:40%;
+    color:white;
+    float: left;
+}
+
+header > nav 
+{
+    /* background-color: chartreuse; */
+    width:50%;
+    float: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav ul li
+{
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+a
+{
+    /* nav a or nav ul li */
+    text-decoration: none;
+    color: white;
+}
+
+section 
+{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333;
+    /* border-width: ;     */
+    /* border-style: ;     */
+    /* border-color: ;     */
+    padding: 5px;
+}
+
+h2 
+{
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 0px gray;
+    /* X축 Y축 번짐 흐림 순 */
+}
+
+h3
+{
+    font-size: 1.3em;
+    padding: 15px 0px 15px 10px;
+    border-left: 8px solid hotpink;
+}
+
+p
+{
+    line-height: 30px;
+    font-size: 15px;
+    margin: 20px;
+}
+
+dl
+{
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+dt
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: burlywood;
+}
+
+article ul
+{
+    line-height: 30px;
+    
+}
+
+footer
+{
+    background-color: #333;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+table 
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    /* border-spacing: 15px; */
+    border-collapse: collapse; 
+    /* 표 간격 없애기 */
+}
+
+td, th
+{
+    border: 1px dotted black;
+    padding: 10px;
+}
+
+th, thead
+{
+    background-color: antiquewhite;
+}
