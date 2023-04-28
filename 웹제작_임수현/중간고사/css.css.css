@@ -1,0 +1,27 @@
+
+img {
+    width: 600px;
+}
+h1{
+    font-size: 35;
+
+}
+p{
+    font-size: 20px;
+    background-color: rgb(73, 73, 73);
+}
+
+fieldset legend {
+    font-weight: bold;
+    /* 굵은 글자 */
+    font-size: 18px;
+    /* 글자 크기 18px */
+    color: rgb(231, 14, 122);
+    /* 글자색 자주 */
+}
+ul legend{
+    font-weight: bold;
+    /* 굵은 글자 */
+    font-size: 18px;
+    color: black;
+}

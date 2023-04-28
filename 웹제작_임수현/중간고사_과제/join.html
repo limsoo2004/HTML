@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>202395026_임수현</title>
+    <link rel="stylesheet" type="text/css " href="202395026.css">
+</head>
+
+<body>
+    <header>
+        <!-- 이미지 영역 -->
+        <div>
+            <img src="image/main.jpg">
+        </div>
+        <!-- 제목 영역 -->
+        <div>
+            <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
+            <p>4차 산업 혁명을 선도할 개발 인재를 양성합니다.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="introduction.html">학과 소개</a> |
+        <a href="history.html">학과 연혁</a> |
+        <a href="join.html">회원가입</a>
+    </nav>
+
+    <section>
+        <h2>회원 가입</h2>
+        <article>
+            <form name="myform" method="get" action="welcome.html">
+                <!-- 개인정보 영역 -->
+                <fieldset>
+                    <legend>개인 정보(필수입력)</legend>
+                    <ul>
+                        <label for="user_name" class="title">아이디</label>
+                        <input type="text" name="user_id" id="user_id" autofocus required>
+                    </ul>
+                    <ul>
+                        <label for="user_tel" class="title">비밀번호</label>
+                        <input type="tel" name="user_tel" id="user_tel" maxlength="12" required>
+                    </ul>
+
+                </fieldset>
+                <!-- 추가정보 영역 -->
+                <fieldset>
+                    <legend>추가 정보(선택사항)</legend>
+                    <ul>
+                        <li>
+                            <label for="user_name" class="title">전화번호</label>
+                            <input type="tel" name="user_tel" id="user_tel" autofocus required>
+                        </li>
+                    </ul>
+                    <ul>
+                        <legend>성별</legend>
+                        <li>
+                            <input type="radio" name="grade" id="female" value="여" checked> <label
+                                for="grade1">여</label>
+                            <input type="radio" name="grade" id="male" value="남"> <label for="grade2">남</label>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <legend>관심분야</legend>
+                        <li>
+                            <input type="checkbox" name="ck_c" id="ck_c" value="C Program">
+                            <label for="ck_c">C</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="ck_p" id="ck_p" value="Python">
+                            <label for="ck_p">파이썬</label>
+                        </li>
+
+                        <label>
+                            <input type="checkbox" name="ck_web" id="ck_web" value="webprogram"> R
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ck_sw" id="ck_sw" value="software"> 앱인벤터
+                        </label>
+                    </ul>
+                </fieldset>
+
+                <!-- 버튼 영역 -->
+                <div>
+                    <input type="submit" value="가입하기">
+                    <input type="reset" value="다시작성">
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>컴퓨터공학부 202395026 임수현</p>
+    </footer>
+
+</body>
+
+</html>
