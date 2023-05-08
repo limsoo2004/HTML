@@ -1,0 +1,60 @@
+body 
+{
+    font-family:"맑은 고딕";
+}
+header
+{
+    background-color: bisque;
+    
+    width: 80%;
+    /* margin 태그는 */
+    /* 오른쪽 가운데 정렬 */
+    margin-right:auto;
+    /* 왼쪽 가운데 정렬 */
+    margin-left: auto;
+    /* padding 방향은  */
+    padding: 10px;
+
+    /* padding: 10px 20px 50px 100px; */
+    /*12시부터 시계방향*/
+    overflow: hidden;
+}
+
+h1
+{
+    /* background-color: rgb(28, 0, 128); */
+    font-size: 2em;
+}
+/* header의 자손인 h1 태그에 적용 */
+header h1 
+{
+    width:40%;
+    color:white;
+    float: left;
+}
+
+header > nav 
+{
+    /* background-color: chartreuse; */
+    width:50%;
+    float: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav ul li
+{
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+a
+{
+    /* nav a or nav ul li */
+    text-decoration: none;
+    color: white;
+}
