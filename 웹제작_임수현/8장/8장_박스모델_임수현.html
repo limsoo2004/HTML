@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록 레벨 요소와 인라인 레벨 요소</title>
+
+    <style>
+        /* 컨텐츠 크기 확인 */
+        .content {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 30px;
+            border: 5px solid black;
+        }
+
+        /* 이미지 블록으로 정리 */
+        #block img {
+            display: block;
+            margin: 10px;
+        }
+
+        #list li {
+            background-color: tan;
+            margin: 10px;
+            width: 150px;
+            height: 50px;
+            /* block 요소는 가로, 세로 길이 지정 가능 */
+        }
+
+        #inline li {
+            background-color: skyblue;
+            margin: 10px;
+            display: inline;
+            width: 150px;
+            height: 50px;
+        }
+
+        #inlineblock li {
+            background-color: chartreuse;
+            margin: 10px;
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            /* inline 요소는 가로, 세로 길이 지정 불가능. */
+            /* inline_block은 가로 정렬되며, 가로, 세로 길이 지정 가능 */
+        }
+
+        .overwrap {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 30px;
+            border: 5px solid black;
+        }
+
+        /* 박스 사이즈 정하기 */
+        .box1, .box2 {
+            width: 300px;
+            height: 150px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        .box1 {
+            box-sizing: content-box;
+        }
+        .box2 {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <hr>
+    
+    <h1>이미지 인라인 배치</h1>
+    <div id="inline">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+    </div>
+    
+    <hr>
+    
+    <h1>이미지 블록 화면 배치</h1>
+    <div id="block">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+    </div>
+    
+    <hr>
+    <h1>메뉴(리스트) 배치(블록)</h1>
+    <ul id="list">
+        <li>학과 소개</li>
+        <li>컴퓨터공학전공</li>
+        <li>메타버스전공</li>
+        <li>교육목표</li>
+        <li>주요 교과목</li>
+    </ul>
+    
+    
+    <h1>메뉴(리스트) 인라인 배치</h1>
+    <ul id="inline">
+        <li>학과 소개</li>
+        <li>컴퓨터공학전공</li>
+        <li>메타버스전공</li>
+        <li>교육목표</li>
+        <li>주요 교과목</li>
+    </ul>
+    
+    <h1>컨텐츠 마진 중첩</h1>
+    <div class="content" style="background-color: cyan;"></div>
+    <div class="content" style="background-color: magenta;"></div>
+    <div class="overwrap" style="background-color: yellow;"></div>
+    <div class="overwrap" style="background-color: black;"></div>
+    
+    <hr>
+    
+    <h1>박스 사이즈 정하기</h1>
+    <div class="box1" style="background-color: blue;">conttent-box</div>
+    <div class="box2" style="background-color: blueviolet;">border-box</div>
+</body>
+
+</html>
