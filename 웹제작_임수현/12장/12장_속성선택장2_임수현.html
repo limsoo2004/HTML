@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 - 임수현</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 10px;
+        }
+
+        li > a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        
+        a[href] {
+            background-color: yellow;
+        }
+
+        a[target="_blank"] {
+            background: url(images/newwindow.png) no-repeat right ;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 표준안 사이트</h1>    
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html">HTML</a></li>
+        <li><a href="http://www.w3c.org/TR/selectors">CSS Selector Level 3</a></li>
+        <li><a href="http://www.w3c.org/TR/css3-mediaqueries">미디어쿼리</a></li>
+    </ul>
+</body>
+</html>
